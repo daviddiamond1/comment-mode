@@ -1,11 +1,14 @@
 {
-  "name": "Comment Mode",
-  "version": "1.0.1",
-  "description": "Read comments while watching videos",
   "manifest_version": 2,
+
+  "name": "Comment Mode",
+  "description": "Read comments while watching YouTube videos",
+  "version": "0.0.0.1",
   "permissions": [
-    "https://www.googleapis.com/*"
+    "activeTab",
+    "https://ajax.googleapis.com/"
   ],
+
   "icons": {
     "16" : "icon.png",
     "48" : "icon.png",
@@ -14,7 +17,7 @@
   "content_scripts": [
     {
       "matches": ["https://www.youtube.com/watch*"],
-      "js" : ["jquery.js", "script.js"]
+      "js" : ["jquery.js", "enable.js", "disable.js"]
     }
   ]
 }
