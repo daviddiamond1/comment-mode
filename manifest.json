@@ -1,22 +1,20 @@
 {
   "name": "Comment Mode",
-  "description": "Read comments while watching YouTube videos",
-  "version": "1.0",
-
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
-  },
-  "permissions" : [
-  "declarativeContent"
+  "version": "1.0.1",
+  "description": "Read comments while watching videos",
+  "manifest_version": 2,
+  "permissions": [
+    "https://www.googleapis.com/*"
   ],
+  "icons": {
+    "16" : "icon.png",
+    "48" : "icon.png",
+    "128" : "icon.png"
+  },
   "content_scripts": [
     {
-      "matches": [
-        "https://*.youtube.com/watch?*"
-      ],
-      "js": ["js/jquery.js", "js/script.js", "https://code.createjs.com/soundjs-0.6.2.min.js"]
+      "matches": ["https://www.youtube.com/watch*"],
+      "js" : ["jquery.js", "script.js"]
     }
-    ],
-    "manifest_version": 2
-  }
+  ]
+}
