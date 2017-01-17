@@ -18,7 +18,6 @@
     {
       "matches": ["https://www.youtube.com/watch*"],
       "js" : ["jquery.js", "enable.js", "disable.js", "analytics.js"],
-      "css" : ["styles.css"],
       "run_at": "document_end"
     }
   ]
