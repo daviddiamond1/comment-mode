@@ -22,7 +22,7 @@ $(".comment-mode-enabled").click(function(){
   $("#page").removeAttr('www-core-2x-webp-vfl59ixOR').css("padding-top","");
   $(".ytp-size-button").removeAttr('www-player-2x-webp-vflgpIFfP').css("display","");
   $(".ytp-subtitles-button").removeAttr('www-core-2x-webp-vfl59ixOR').css("display", "");
-  $(".ytp-subtitles-button").attr("disabled", "");
+  $(".ytp-fullscreen-button").removeAttr('www-core-2x-webp-vfl59ixOR').css("display", "");
   $(".watch-sidebar-gutter").removeAttr('www-core-2x-webp-vfl59ixOR').css("padding-top", "");
   $(".watch-sidebar-gutter").removeAttr('www-core-2x-webp-vfl59ixOR').css("padding-right", "");
   $(".watch-sidebar-gutter").removeAttr('www-core-2x-webp-vfl59ixOR').css("padding-left", "");
